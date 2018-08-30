@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quantum.higgs.sulapangka.MainActivity">
+
+    <ImageView
+        android:id="@+id/img_soal"
+        android:layout_width="328dp"
+        android:layout_height="372dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_help"
+        app:srcCompat="@drawable/soal1" />
+
+    <Button
+        android:id="@+id/btn_Ada"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="132dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/button_rounded"
+        android:text="Ada"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Tidak"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Tidak"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="132dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/button_rounded"
+        android:text="Tidak Ada"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_help"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:tint="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_red_dark"
+        android:tint="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/img_soal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toEndOf="@+id/btn_help"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="322dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2760112945176520/6335748801"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/img_soal"/>
+
+
+</android.support.constraint.ConstraintLayout>

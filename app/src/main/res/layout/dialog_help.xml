@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_help"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#303F9F"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pikirkan Angka 1 sampai 31, kemudian lihat barisan angka yang tedapat di tengah layar. Apabila angka yang kamu pikirkan terdapat di barisan angka, tekan Ya, namun jika tidak terdapat, tekan Tidak."
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OKE" />
+</LinearLayout>
